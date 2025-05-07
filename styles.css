@@ -1,0 +1,202 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color:#05040A;
+    background-size: cover;
+    background-attachment:fixed;
+    background-repeat:no-repeat;
+    background-position: center;
+    @font-face {
+        font-family: 'aileron';
+        src: url('aileron.ultralight.otf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+      }
+    font-family: 'aileron', sans-serif;
+    scroll-behavior: smooth;
+  }
+
+  .hero {
+    position: relative;
+    height: 100vh;
+    background: url('images/andforabriefmomentisee.jpg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+  }
+
+
+  .hero::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-image: url("images/andforabriefmomentisee.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.05;
+    pointer-events: none;
+    z-index: 0;
+  }
+  
+  
+  .content {
+    background: #05040A;
+    padding: 100px 20px;
+    color: #E5F0FF;
+    text-align: center;
+    z-index: 1;
+  }
+  
+  .content section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding-bottom: 25px;
+  }
+  
+  .content h3 a {
+    position: relative;
+    display: inline-block;
+    color: #E5F0FF;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .content h3 a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background-color: #E5F0FF;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .content h3 a:hover::after {
+    transform: scaleX(1);
+  }
+  
+  .discography {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #05040A;
+    color: #E5F0FF;
+    z-index: 2;
+  }
+
+.song-row {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 20px;
+    margin-top: 20px;
+    z-index: 2;
+  }
+  
+  .song-image {
+    width: 150px; 
+    height: 150px;
+    object-fit: cover; 
+    transition: transform 0.3s ease;
+    position:relative;
+    z-index: 2; 
+  }
+  
+  .song-image:hover {
+    transform: scale(1.1);
+  }
+
+  .video-embed {
+    max-width: 960px;
+    margin: 0 auto;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+    z-index: 3;
+    position: relative;
+  }
+
+  .otherworks {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #05040A;
+    color: #E5F0FF;
+    z-index: 2;
+  }
+
+  .navbar {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    background-color: rgba(5, 4, 10, 0.98);
+    padding: 15px 0;
+    z-index: 1000;
+    transition: 
+      top 0.5s cubic-bezier(0.23, 1, 0.32, 1),
+      opacity 0.4s ease 0.1s;
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(229, 240, 255, 0.1);
+    visibility: hidden;
+    opacity: 0;
+  }
+  
+  .nav-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 25px;
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 1200px;
+  }
+  
+  .nav-links h3 {
+    margin: 0;
+    display: inline-block;
+  }
+
+  .nav-links h3 a {
+    position: relative;
+    display: inline-block;
+    color: #E5F0FF;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 1rem; 
+  }
+  
+  .nav-links h3 a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background-color: #E5F0FF;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .nav-links h3 a:hover::after {
+    transform: scaleX(1);
+  }
+  
+  .navbar.visible {
+    top: 0;
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .navbar.hiding {
+    top: 0;
+    opacity: 0;
+    visibility: visible;
+  }
