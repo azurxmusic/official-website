@@ -1,8 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-
-  console.log('Kenneth Allocco | GitHub: azurxmusic | email: swordninjago@outlook.com');
-
-    const contactSection = document.querySelector('section:has(h3 > a[href="#contact"])');
+    const contactSection = document.querySelector('section:has(h3 > a[href="#"])');
     const nav = document.querySelector('.navbar');
     let isActive = false;
   
