@@ -200,3 +200,88 @@ html, body {
     opacity: 0;
     visibility: visible;
   }
+
+.upcoming {
+  padding: 50px 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.upcomingcover {
+  width: 450px;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 4px;
+  position: relative;
+  z-index: 2;
+}
+
+.platforms {
+  padding: 50px 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.platrow {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center; 
+  gap: 20px;
+  margin-top: 20px;
+  z-index: 2;
+}
+
+.platformimg {
+  width: 100px; 
+  height: 100px;
+  object-fit: cover; 
+  transition: transform 0.3s ease;
+  position:relative;
+  z-index: 2; 
+}
+
+.platformimg:hover {
+  transform: scale(1.1);
+}
+
+.socialrow {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center; 
+  gap: 20px;
+  margin-top: 20px;
+  z-index: 2;
+}
+
+.socialimg {
+  width: 100px; 
+  height: 100px;
+  object-fit: cover; 
+  transition: transform 0.3s ease;
+  position:relative;
+  z-index: 2; 
+}
+
+.socialimg:hover {
+  transform: scale(1.1);
+}
+
+.contact-section {
+  text-align: center;
+  padding: 50px 20px;
+  margin-top: 50px;
+}
+
+.email-link {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 1.1em;
+  color: #E5F0FF;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.3s;
+}
+
+.email-link:hover {
+  border-bottom-color: #E5F0FF;
+}
