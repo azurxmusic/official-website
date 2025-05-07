@@ -57,12 +57,20 @@ html, body {
     padding-bottom: 25px;
   }
   
+  .content h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #E5F0FF;
+  }
   .content h3 a {
     position: relative;
     display: inline-block;
     color: #E5F0FF;
     text-decoration: none;
     transition: color 0.3s ease;
+    font-size: 32px;
+    font-weight: bold;
+    color: #E5F0FF;
   }
   
   .content h3 a::after {
@@ -284,4 +292,12 @@ html, body {
 
 .email-link:hover {
   border-bottom-color: #E5F0FF;
+}
+
+.section-divider {
+  width: 200px; 
+  border: none;
+  height: 2px;
+  background-color: #E5F0FF; 
+  margin: 40px auto;
 }
